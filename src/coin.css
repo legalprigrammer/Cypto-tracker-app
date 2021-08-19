@@ -1,0 +1,112 @@
+#root {
+  background-color: white;
+  color: gray;
+}
+
+.coin-container {
+  width: 100%;
+}
+
+.coin-container .coin-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.coin-container .coin {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coin-container .symbol {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.coin-container .coin-data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coin-container img {
+  width: 30%;
+}
+
+.coin-container .marketcap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coin-container .marketcap .graph {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #root {
+    background-color: white;
+    color: gray;
+  }
+  .coin-container {
+    width: 100%;
+  }
+  .coin-container .coin-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid whitesmoke;
+  }
+  .coin-container .coin {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 5fr;
+        grid-template-columns: 1fr 1fr 5fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .coin-container .symbol {
+    display: none;
+  }
+  .coin-container .coin-data {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .coin-container img {
+    width: 100%;
+  }
+  .coin-container .marketcap {
+    display: none;
+  }
+  .coin-container .marketcap .graph {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=coin.css.map */
